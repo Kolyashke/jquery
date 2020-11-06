@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Аттестация для Сани</title>	
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	</head>
+	<body>
+		<button class = "left">Влево</button>
+		<button class = "right">Вправо</button>
+		<div>Я кубик и могу двигаться</div>
+
+	<script type="text/javascript">
+
+
+	  $( ".left" ).click(function(){ // задаем функцию при нажатиии на элемент с классом left
+	    $( "div" ).animate({
+	      right: "+=100px", // смещение позиционированного элемента от правого края (увеличение текущего значения на 100)
+	      }, "linear"); // скорость анимации
+	  });
+
+	  $( ".right" ).click(function(){ // задаем функцию при нажатиии на элемент с классом right
+	    $( "div" ).animate({
+	      right: "-=100px", // смещение позиционированного элемента от правого края (уменьшение текущего значения на 100)
+	      }, "linear"); 
+	  });  
+		</script>
+	</body>
+</html>
